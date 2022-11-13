@@ -86,13 +86,13 @@ function show() {
         const element = document.createElement("p");
         const deleteBtn = document.createElement("button");
         deleteBtn.innerText = "x";
-        deleteBtn.style = "margin-left:1rem;color:red;";
+        /*deleteBtn.style = "margin-left:1rem;color:red;";*/
         deleteBtn.id = toDoList.id;
         deleteBtn.className = 'delete'
         deleteBtn.onclick = deleteTodo;
         let word = toDoList.title;
         let newWord = word.charAt(0).toUpperCase() + word.slice(1);
-        element.textContent = `⌚ By ${toDoList.dueDate} 🔜 I will ${newWord}`;
+        element.textContent = ` ${toDoList.dueDate} 🔜 I will have to ${newWord}`;
       items.appendChild(element);
       element.appendChild(deleteBtn);
     });
