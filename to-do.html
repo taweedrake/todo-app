@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="to-do.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="main">
+        <h1>To-Do list</h1>
+        <input type="text" id="item" class="input" placeholder="Activity">
+        <input type="date"  id="date" placeholder="Date">
+        <input type="checkbox" id="box" >
+        <button id="btn" onclick="add()" disabled>Add</button>
+    </div>
+    <div id="items">
+
+    </div>
+    <center><button onclick="reset()" disabled id="rest">Reset</button></center>
+    <center><h4>&#169;2022, Pattawee Drake Khaonuengtung; All Rights Reserved</h4></center>
+    <h6>Dedicated Work</h6>
+    <script src="to-do.js"></script> 
+</body>
+</html>
